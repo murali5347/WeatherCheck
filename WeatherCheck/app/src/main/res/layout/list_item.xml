@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/image_side_width"
+        android:layout_height="match_parent"
+        android:id="@+id/conditionImageView"
+        android:clickable="false"
+        android:contentDescription="@string/weather_condition_image"
+        android:scaleType="fitCenter" />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:layout_weight="1"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/dayTextView"
+            android:layout_column="0"
+            android:layout_columnSpan="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/minTextView"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/maxTextView"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/humidityTextView"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1" />
+    </GridLayout>
+
+</LinearLayout>
